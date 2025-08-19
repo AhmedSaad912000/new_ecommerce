@@ -7,15 +7,8 @@ class ColorsManger{
   static const Color secondary=  Color(0xffffe248);
   static const Color accent=  Color(0xffb0c7ff);
 
-  // Gradiant Colors
-  static const Gradient linerGradient= LinearGradient(
-    begin: Alignment(0.0,0.0),
-      end: Alignment(0.707, -0.707),
-      colors: [
-    Color(0xffff9a9e),
-    Color(0xfffad0c4),
-    Color(0xfffad0c4),
-  ]);
+
+
 
   // Text Color
 static const Color textPrimary= Color(0xff333333);

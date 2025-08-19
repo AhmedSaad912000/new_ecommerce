@@ -1,0 +1,43 @@
+import 'package:flutter/material.dart';
+
+import '../../../util/constants/colors.dart';
+import '../../../util/constants/image_strings.dart';
+import '../../../util/constants/sizes.dart';
+
+class SocialButtons extends StatelessWidget {
+  const SocialButtons({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Container(
+            decoration: BoxDecoration(
+              border: Border.all(color: ColorsManger.gray,),
+              borderRadius: BorderRadius.circular(100),
+            ),
+            child: IconButton(onPressed: (){}, icon: Image(
+                width: CustomSizes.iconMd,
+                height: CustomSizes.iconMd,
+                image: AssetImage(CustomImages.google)),
+            )
+        ),
+        SizedBox(width: CustomSizes.spaceBtwItems,),
+        Container(
+            decoration: BoxDecoration(
+              border: Border.all(color: ColorsManger.gray,),
+              borderRadius: BorderRadius.circular(100),
+            ),
+            child: IconButton(onPressed: (){}, icon: Image(
+                width: CustomSizes.iconMd,
+                height: CustomSizes.iconMd,
+                image: AssetImage(CustomImages.facebook)),
+            )
+        ),
+      ],
+    );
+  }
+}
