@@ -13,7 +13,7 @@ class OnBoardingController extends GetxController{
   }
   void nextPage(){
     if(currentPage.value==2){
-      Get.to(LoginScreen());
+      Get.offAll(LoginScreen());
     }else{
       int page= currentPage.value+1;
       pageController.jumpToPage(page);
