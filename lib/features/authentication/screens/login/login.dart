@@ -1,3 +1,4 @@
+import 'package:ecommerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
 import 'package:ecommerce/util/constants/colors.dart';
 import 'package:ecommerce/util/constants/sizes.dart';
