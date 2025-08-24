@@ -1,4 +1,5 @@
 import 'package:ecommerce/common/widgets/login_signup/social_buttons.dart';
+import 'package:ecommerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:ecommerce/util/constants/colors.dart';
 import 'package:ecommerce/util/constants/sizes.dart';
 import 'package:ecommerce/util/constants/text_strings.dart';
@@ -36,7 +37,7 @@ class SignUpScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: ()=> Get.to(VerifyEmailScreen()),
                   child: Text(
                     CustomText.createAccount,
                   ),
