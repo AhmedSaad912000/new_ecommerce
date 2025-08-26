@@ -19,5 +19,16 @@ class CustomImages{
   static const String uploadingImageIllustration = "assets/animations/uploading-files-from-computer-to-cloud-storage.gif";
   static const String verifyIllustration = "assets/animations/sammy-line-travel-backpack-with-passport-and-air-ticket.gif";
 
+  //  Category Icons
+  static const String sportIcon = "assets/icons/icons8-bowling-64.png";
+  static const String clothIcon = "assets/icons/icons8-tailors-dummy-64.png";
+  static const String shoeIcon = "assets/icons/icons8-shoes-64.png";
+  static const String cosmeticsIcon = "assets/icons/icons8-cosmetics-64.png";
+  static const String animalIcon = "assets/icons/icons8-dog-heart-64.png";
+  static const String toyIcon = "assets/icons/icons8-wooden-toy-car-50.png";
+  static const String furnitureIcon = "assets/icons/icons8-dining-chair-64.png";
+  static const String jeweleryIcon = "assets/icons/icons8-sparkling-diamond-64.png";
+  static const String electronicsIcon = "assets/icons/icons8-smartphone-64.png";
+
 
 }
