@@ -30,5 +30,13 @@ class CustomImages{
   static const String jeweleryIcon = "assets/icons/icons8-sparkling-diamond-64.png";
   static const String electronicsIcon = "assets/icons/icons8-smartphone-64.png";
 
+  //Banners
+  static const String promoBanner1 = "assets/images/promo-banner-1.png";
+  static const String promoBanner2 = "assets/images/promo-banner-2.png";
+  static const String promoBanner3 = "assets/images/promo-banner-3.png";
+  static const String banner2 = "assets/images/banner_2.jpg";
+  static const String banner3 = "assets/images/banner_3.jpg";
+  static const String banner4 = "assets/images/banner_4.jpg";
+
 
 }
