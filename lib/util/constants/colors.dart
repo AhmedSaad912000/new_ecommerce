@@ -6,6 +6,9 @@ class ColorsManger{
   static const Color primaryColor=  Color(0xff4868FF);
   static const Color secondary=  Color(0xffffe248);
   static const Color accent=  Color(0xffb0c7ff);
+  // Dashboard Specific Colors
+  static const Color dashboardAppbarBackground = Color(0xFF4b68ff);
+
 
 
 
@@ -14,11 +17,18 @@ class ColorsManger{
 static const Color textPrimary= Color(0xff333333);
 static const Color textSecondary= Color(0xff6c7570);
 static const Color textWhite= Colors.white;
+static const Color disabledTextLight = Color(0xFFD1D5DB);
+static const Color disabledBackgroundLight = Color(0xFFF3F4F6);
+static const Color disabledTextDark = textSecondary;
+static const Color disabledBackgroundDark = Color(0xFF222A3D);
+
 
 // BackgroundColor
 static const Color light= Color(0xfff6f6f6);
 static const Color dark= Color(0xff272727);
 static const Color primaryBackground= Color(0xfff3f5ff);
+static const Color lightBackground = Color(0xFFFFFFFF);
+static const Color darkBackground = Color(0xFF02040A);
 
 // Background Container Colors
 static const Color lightContainer= Color(0xfff6f6f6);

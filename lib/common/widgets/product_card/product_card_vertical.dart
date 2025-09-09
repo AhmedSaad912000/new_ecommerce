@@ -1,4 +1,5 @@
 import 'package:ecommerce/common/widgets/images/rounded_image.dart';
+import 'package:ecommerce/common/widgets/texts/brand_title_text.dart';
 import 'package:ecommerce/util/constants/colors.dart';
 import 'package:ecommerce/util/constants/image_strings.dart';
 import 'package:ecommerce/util/constants/sizes.dart';
@@ -9,6 +10,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../styles/shadows.dart';
 import '../custom_shapes/containers/rounded_container.dart';
 import '../icons/circular_icon.dart';
+import '../texts/product_price_text.dart';
 import '../texts/product_title_text.dart';
 
 class ProductCardVertical extends StatelessWidget {
@@ -20,7 +22,7 @@ class ProductCardVertical extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: Container(
-        width: 180,
+        width: 150,
         padding: EdgeInsets.all(1),
         decoration: BoxDecoration(
             boxShadow: [ShadowStyle.verticalProductShadow],
@@ -41,17 +43,12 @@ class ProductCardVertical extends StatelessWidget {
                   ),
                   RoundedContainer(
                     radius: CustomSizes.sm,
-                    backgroundColor:
-                    ColorsManger.secondary.withValues(alpha: 0.1),
+                    backgroundColor:ColorsManger.secondary,
                     padding: EdgeInsets.symmetric(
                         horizontal: CustomSizes.sm, vertical: CustomSizes.xs),
                     child: Text(
                       "29%",
-                      style: Theme
-                          .of(context)
-                          .textTheme
-                          .labelLarge!
-                          .apply(color: ColorsManger.black),
+                      style: Theme.of(context).textTheme.labelLarge!.apply(color: ColorsManger.black),
                     ),
                   ),
                   Positioned(
@@ -78,50 +75,34 @@ class ProductCardVertical extends StatelessWidget {
                   SizedBox(
                     height: CustomSizes.spaceBtwItems / 2,
                   ),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme
-                            .of(context)
-                            .textTheme
-                            .labelMedium,
-                      ),
-                      SizedBox(
-                        width: CustomSizes.xs,
-                      ),
-                      Icon(
-                        Iconsax.verify5,
-                        color: ColorsManger.primaryColor,
-                        size: CustomSizes.iconXs,
-                      )
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      ProductPriceText(price: "35.5"),
-                      Container(
-                        decoration: BoxDecoration(
-                            color: ColorsManger.dark,
-                            borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(
-                                  CustomSizes.cardRadiusMd),
-                              bottomRight:
-                              Radius.circular(CustomSizes.productImageRadius),
-                            )),
-                        child: SizedBox(
-                            width: CustomSizes.iconLg * 1.2,
-                            height: CustomSizes.iconLg * 1.2,
-                            child: Icon(Iconsax.add, color: ColorsManger
-                                .white,)),
-                      ),
-                    ],
-                  )
+                  BrandTitleText(title: "Nike"),
                 ],
               ),
+            ),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(left: CustomSizes.sm),
+                  child: ProductPriceText(price: "35.5"),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      color: ColorsManger.dark,
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(
+                            CustomSizes.cardRadiusMd),
+                        bottomRight:
+                        Radius.circular(CustomSizes.productImageRadius),
+                      )),
+                  child: SizedBox(
+                      width: CustomSizes.iconLg * 1.2,
+                      height: CustomSizes.iconLg * 1.2,
+                      child: Icon(Iconsax.add, color: ColorsManger
+                          .white,)),
+                ),
+              ],
             ),
           ],
         ),
@@ -130,31 +111,3 @@ class ProductCardVertical extends StatelessWidget {
   }
 }
 
-class ProductPriceText extends StatelessWidget {
-  const ProductPriceText({
-    super.key,
-    this.currencySign = "\$",
-    required this.price,
-    this.maxLines = 1,
-    this.isLarge = false,
-    this.lineThrough = false,
-  });
-
-  final String currencySign, price;
-  final int maxLines;
-  final bool isLarge;
-  final bool lineThrough;
-
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-        currencySign + price,
-        maxLines: maxLines,
-        overflow: TextOverflow.ellipsis,
-        style: isLarge
-            ? Theme.of(context).textTheme.headlineMedium!.apply(decoration: lineThrough ? TextDecoration.lineThrough : null)
-            : Theme.of(context).textTheme.titleLarge!.apply(decoration: lineThrough ? TextDecoration.lineThrough : null)
-        );
-    }
-}

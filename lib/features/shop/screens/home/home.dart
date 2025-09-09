@@ -76,6 +76,9 @@ class HomeScreen extends StatelessWidget {
                       CustomImages.banner2,
                     ],
                   ),
+                  SizedBox(height: CustomSizes.spaceBtwSection,),
+                  SectionHeading(title: 'Popular Products',onPressed: (){},),
+                  SizedBox(height: CustomSizes.spaceBtwItems,),
                   GridLayout(itemCount: 10,itemBuilder: (context, index) => ProductCardVertical() ,)
                 ],
               ),
