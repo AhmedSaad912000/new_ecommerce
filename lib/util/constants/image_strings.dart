@@ -37,6 +37,33 @@ class CustomImages{
   static const String banner2 = "assets/images/banner_2.jpg";
   static const String banner3 = "assets/images/banner_3.jpg";
   static const String banner4 = "assets/images/banner_4.jpg";
+  // -- Products
+  static const String productImage1 = "assets/images/nike-shoes.png";
+  static const String productImage5 = "assets/images/product-shirt.png";
+  static const String productImage7 = "assets/images/NikeAirJOrdonBlackRed.png";
+  static const String productImage8 = "assets/images/NikeAirJOrdonOrange.png";
+  static const String productImage9 = "assets/images/NikeAirJordonwhiteMagenta.png";
+  static const String productImage10 = "assets/images/NikeAirJOrdonWhiteRed.png";
+  static const String productImage11 = "assets/images/samsung_s9_mobile.png";
+  static const String productImage12 = "assets/images/samsung_s9_mobile_withback.png";
+  static const String productImage13 = "assets/images/samsung_s9_mobile_back.png";
+  static const String productImage18 = "assets/images/tomi_dogfood.png";
+  static const String productImage19 = "assets/images/NikeAirJordonSingleBlue.png";
+  static const String productImage20 = "assets/images/NikeAirJordonSingleOrange.png";
+  static const String productImage21 = "assets/images/NikeAirMax.png";
+  static const String productImage22 = "assets/images/NikeBasketballShoeGreenBlack.png";
+  static const String productImage23 = "assets/images/NikeWildhorse.png";
+  static const String productImage60 = "assets/images/tshirt_red_collar.png";
+  static const String productImage61 = "assets/images/tshirt_yellow_collar.png";
+  static const String productImage62 = "assets/images/tshirt_green_collar.png";
+  static const String productImage63 = "assets/images/tshirt_blue_collar.png";
+  static const String productImage64 = "assets/images/leather_jacket_1.png";
+  static const String productImage65 = "assets/images/leather_jacket_2.png";
+  static const String productImage66 = "assets/images/leather_jacket_3.png";
+  static const String productImage67 = "assets/images/leather_jacket_4.png";
+  static const String productImage68 = "assets/images/tshirt_blue_without_collar_back.png";
+  static const String productImage69 = "assets/images/tshirt_blue_without_collar_front.png";
+
 
 
 }

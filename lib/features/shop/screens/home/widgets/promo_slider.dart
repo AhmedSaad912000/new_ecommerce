@@ -38,7 +38,10 @@ class PromoSlider extends StatelessWidget {
                 ),
             ],
           ),
-        )
+        ),
+        SizedBox(
+          height: CustomSizes.spaceBtwSection,
+        ),
       ],
     );
   }
