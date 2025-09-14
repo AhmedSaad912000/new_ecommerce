@@ -6,7 +6,6 @@ import 'package:ecommerce/features/shop/screens/home/home.dart';
 import 'package:ecommerce/util/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class WishlistScreen extends StatelessWidget {
@@ -18,15 +17,15 @@ class WishlistScreen extends StatelessWidget {
       appBar: CustomAppBar(
         title: Text("WishList",style: Theme.of(context).textTheme.headlineMedium,),
         actions: [
-          CircularIcon(icon: Iconsax.add,onPressed: ()=>Get.to(HomeScreen()),),
+          CircularIcon(icon: Iconsax.add,onPressed: ()=>Get.to(const HomeScreen()),),
         ],
       ),
       body: SingleChildScrollView(
         child: Padding(
-            padding: EdgeInsets.all(CustomSizes.defaultSpace),
+            padding: const EdgeInsets.all(CustomSizes.defaultSpace),
           child: Column(
             children: [
-              GridLayout(itemCount: 10, itemBuilder: (p0, p1) => ProductCardVertical(),)
+              GridLayout(itemCount: 10, itemBuilder: (p0, p1) => const ProductCardVertical(),)
             ],
           ),
         ),
