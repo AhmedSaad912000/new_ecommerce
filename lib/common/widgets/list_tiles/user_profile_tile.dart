@@ -5,8 +5,9 @@ import '../../../util/constants/colors.dart';
 import '../../../util/constants/image_strings.dart';
 class UserProfileTile extends StatelessWidget {
   const UserProfileTile({
-    super.key,
+    super.key, required this.onPressed,
   });
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class UserProfileTile extends StatelessWidget {
       ),
       title: Text("Code with I",style: Theme.of(context).textTheme.headlineSmall!.apply(color: ColorsManger.white),),
       subtitle: Text("support@coding.com",style: Theme.of(context).textTheme.bodyMedium!.apply(color: ColorsManger.white),),
-      trailing: IconButton(onPressed: (){}, icon: const Icon(Iconsax.edit,color: Colors.white,)),
+      trailing: IconButton(onPressed: onPressed, icon: const Icon(Iconsax.edit,color: Colors.white,)),
 
     );
   }
