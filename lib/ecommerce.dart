@@ -1,13 +1,7 @@
-import 'package:ecommerce/features/authentication/screens/login/login.dart';
-import 'package:ecommerce/features/authentication/screens/password_configuration/forget_password.dart' show ForgetPassword, ForgetPasswordScreen;
-import 'package:ecommerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:ecommerce/util/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'features/authentication/screens/onboarding/onboarding.dart';
-import 'features/authentication/screens/password_configuration/forget_password.dart' show ForgetPassword;
-import 'features/authentication/screens/signup/signup.dart';
 import 'navigation_menu.dart' show NavigationMenu;
 
 class ECommerceApp extends StatelessWidget {

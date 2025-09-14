@@ -13,7 +13,7 @@ class OnBoardingController extends GetxController{
   }
   void nextPage(){
     if(currentPage.value==2){
-      Get.offAll(LoginScreen());
+      Get.offAll(const LoginScreen());
     }else{
       int page= currentPage.value+1;
       pageController.jumpToPage(page);
@@ -22,7 +22,7 @@ class OnBoardingController extends GetxController{
   void skipPage(){
     currentPage.value=2;
     pageController.jumpTo(2);
-    Get.to(LoginScreen());
+    Get.to(const LoginScreen());
 
   }
 }

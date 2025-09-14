@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'features/shop/screens/store/store.dart';
+import 'features/shop/screens/wishlist/wishlist.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -25,7 +26,7 @@ class NavigationMenu extends StatelessWidget {
               indicatorColor: darkMode
                   ? Colors.white.withValues(alpha: 0.1)
                   : Colors.black.withValues(alpha: 0.1),
-              destinations: [
+              destinations: const [
                 NavigationDestination(icon: Icon(Iconsax.home), label: "Home"),
                 NavigationDestination(icon: Icon(Iconsax.shop), label: "Store"),
                 NavigationDestination(
@@ -41,12 +42,9 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
   final screens = [
-    HomeScreen(),
-    StoreScreen(),
-
-    Container(
-      color: Colors.orange,
-    ),
+    const HomeScreen(),
+    const StoreScreen(),
+    const WishlistScreen(),
     Container(
       color: Colors.blue,
     ),

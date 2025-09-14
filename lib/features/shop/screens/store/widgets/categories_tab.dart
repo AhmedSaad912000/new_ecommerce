@@ -6,18 +6,18 @@ class CategoriesTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return  ListView(
       shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
      children: [
        Padding(
-         padding: EdgeInsets.all(CustomSizes.defaultSpace),
+         padding: const EdgeInsets.all(CustomSizes.defaultSpace),
          child: Column(
            children: [
-             BrandShowCase(images: [CustomImages.productImage1,CustomImages.productImage5,CustomImages.productImage10],),
-             BrandShowCase(images: [CustomImages.productImage1,CustomImages.productImage5,CustomImages.productImage10],),
-             SizedBox(height: CustomSizes.spaceBtwItems,),
+             const BrandShowCase(images: [CustomImages.productImage1,CustomImages.productImage5,CustomImages.productImage10],),
+             const BrandShowCase(images: [CustomImages.productImage1,CustomImages.productImage5,CustomImages.productImage10],),
+             const SizedBox(height: CustomSizes.spaceBtwItems,),
              SectionHeading(title: "You might like",onPressed: (){},),
-             SizedBox(height: CustomSizes.spaceBtwItems,),
-             GridLayout(itemCount: 4, itemBuilder: (p0, p1) => ProductCardVertical(),)
+             const SizedBox(height: CustomSizes.spaceBtwItems,),
+             GridLayout(itemCount: 4, itemBuilder: (p0, p1) => const ProductCardVertical(),)
            ],
          ),
        ),

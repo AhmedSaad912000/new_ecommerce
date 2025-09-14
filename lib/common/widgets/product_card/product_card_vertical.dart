@@ -23,7 +23,7 @@ class ProductCardVertical extends StatelessWidget {
       onTap: () {},
       child: Container(
         width: 150,
-        padding: EdgeInsets.all(1),
+        padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
             boxShadow: [ShadowStyle.verticalProductShadow],
             borderRadius: BorderRadius.circular(CustomSizes.productImageRadius),
@@ -32,11 +32,11 @@ class ProductCardVertical extends StatelessWidget {
           children: [
             RoundedContainer(
               height: 100,
-              padding: EdgeInsets.all(CustomSizes.sm),
+              padding: const EdgeInsets.all(CustomSizes.sm),
               backgroundColor: dark ? ColorsManger.dark : ColorsManger.light,
               child: Stack(
                 children: [
-                  RoundedImage(
+                  const RoundedImage(
                     width: 158,
                     imageUrl: CustomImages.productImage1,
                     applyImageRadius: true,
@@ -44,14 +44,14 @@ class ProductCardVertical extends StatelessWidget {
                   RoundedContainer(
                     radius: CustomSizes.sm,
                     backgroundColor:ColorsManger.secondary,
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                         horizontal: CustomSizes.sm, vertical: CustomSizes.xs),
                     child: Text(
                       "29%",
                       style: Theme.of(context).textTheme.labelLarge!.apply(color: ColorsManger.black),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                       right: 0,
                       child: CircularIcon(
                         icon: Iconsax.heart5,
@@ -60,10 +60,10 @@ class ProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwItems / 2,
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: CustomSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -79,16 +79,16 @@ class ProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: CustomSizes.sm),
+                const Padding(
+                  padding: EdgeInsets.only(left: CustomSizes.sm),
                   child: ProductPriceText(price: "35.5"),
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: ColorsManger.dark,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(
@@ -96,7 +96,7 @@ class ProductCardVertical extends StatelessWidget {
                         bottomRight:
                         Radius.circular(CustomSizes.productImageRadius),
                       )),
-                  child: SizedBox(
+                  child: const SizedBox(
                       width: CustomSizes.iconLg * 1.2,
                       height: CustomSizes.iconLg * 1.2,
                       child: Icon(Iconsax.add, color: ColorsManger
