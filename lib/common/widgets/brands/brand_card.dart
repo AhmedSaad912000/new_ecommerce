@@ -19,7 +19,7 @@ class BrandCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: RoundedContainer(
-        padding: EdgeInsets.all(CustomSizes.sm),
+        padding: const EdgeInsets.all(CustomSizes.sm),
         showBorder: showBorder,
         backgroundColor: Colors.transparent,
         child: Row(
@@ -33,7 +33,7 @@ class BrandCard extends StatelessWidget {
                     : ColorsManger.black,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwItems / 2,
             ),
             Expanded(
@@ -41,7 +41,7 @@ class BrandCard extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  BrandTitleWithVerifiedIcon(
+                  const BrandTitleWithVerifiedIcon(
                     title: "Nike",
                     brandTextSize: TextSizes.large,
                   ),

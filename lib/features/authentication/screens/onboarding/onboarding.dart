@@ -3,7 +3,6 @@ import 'package:ecommerce/util/device/device_utility.dart';
 import 'package:ecommerce/util/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -35,7 +34,7 @@ class OnBoardingScreen extends StatelessWidget {
                 child: PageView(
                   controller:controller.pageController,
                   onPageChanged: controller.updatePageIndicator,
-                  children: [
+                  children: const [
                     OnBoardingPage(
                       image: CustomImages.tOnBoardingImage1,
                       title: CustomText.onBoardingTitle1,
@@ -56,9 +55,9 @@ class OnBoardingScreen extends StatelessWidget {
               ),
             ],
           ),
-          OnBoardingSkip(),
-          OnBoardingDotNavigation(),
-          OnBoardingNextButton()
+          const OnBoardingSkip(),
+          const OnBoardingDotNavigation(),
+          const OnBoardingNextButton()
         ],
       ),
     );

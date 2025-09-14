@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            PrimaryHeaderContainer(
+            const PrimaryHeaderContainer(
               child: Column(
                 children: [
                   HomeAppBar(),
@@ -63,10 +63,10 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(CustomSizes.defaultSpace),
+              padding: const EdgeInsets.all(CustomSizes.defaultSpace),
               child: Column(
                 children: [
-                  PromoSlider(
+                  const PromoSlider(
                     banners: [
                       CustomImages.banner4,
                       CustomImages.promoBanner3,
@@ -76,10 +76,10 @@ class HomeScreen extends StatelessWidget {
                       CustomImages.banner2,
                     ],
                   ),
-                  SizedBox(height: CustomSizes.spaceBtwSection,),
+                  const SizedBox(height: CustomSizes.spaceBtwSection,),
                   SectionHeading(title: 'Popular Products',onPressed: (){},),
-                  SizedBox(height: CustomSizes.spaceBtwItems,),
-                  GridLayout(itemCount: 10,itemBuilder: (context, index) => ProductCardVertical() ,)
+                  const SizedBox(height: CustomSizes.spaceBtwItems,),
+                  GridLayout(itemCount: 10,itemBuilder: (context, index) => const ProductCardVertical() ,)
                 ],
               ),
             )

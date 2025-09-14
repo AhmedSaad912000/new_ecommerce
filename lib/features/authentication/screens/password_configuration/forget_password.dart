@@ -3,7 +3,6 @@ import 'package:ecommerce/util/constants/sizes.dart';
 import 'package:ecommerce/util/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ForgetPasswordScreen extends StatelessWidget {
@@ -14,7 +13,7 @@ class ForgetPasswordScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: EdgeInsets.all(
+        padding: const EdgeInsets.all(
           CustomSizes.defaultSpace,
         ),
         child: Column(
@@ -24,28 +23,28 @@ class ForgetPasswordScreen extends StatelessWidget {
               CustomText.forgetPasswordTitle,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwItems,
             ),
             Text(
               CustomText.forgetPasswordSubTitle,
               style: Theme.of(context).textTheme.labelMedium,
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwSection * 2,
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: CustomText.email,
                 prefixIcon: Icon(Iconsax.direct_right),
               ),
             ),
-            SizedBox(height: CustomSizes.spaceBtwSection),
+            const SizedBox(height: CustomSizes.spaceBtwSection),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () => Get.off(ResetPasswordScreen()),
-                child: Text(CustomText.submit),
+                onPressed: () => Get.off(const ResetPasswordScreen()),
+                child: const Text(CustomText.submit),
               ),
             ),
           ],

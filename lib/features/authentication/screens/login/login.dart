@@ -1,7 +1,6 @@
 import 'package:ecommerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
 import 'package:ecommerce/navigation_menu.dart';
-import 'package:ecommerce/util/constants/colors.dart';
 import 'package:ecommerce/util/constants/sizes.dart';
 import 'package:ecommerce/util/constants/text_strings.dart';
 import 'package:ecommerce/util/helpers/helper_function.dart';
@@ -27,11 +26,11 @@ class LoginScreen extends StatelessWidget {
           padding: SpacingStyles.paddingWithAppBarHeight,
           child: Column(
             children: [
-              LoginHeader(),
-              LoginForm(),
+              const LoginHeader(),
+              const LoginForm(),
               FormDivider(dividerText: CustomText.orSignInWith.capitalize!,),
-              SizedBox(height: CustomSizes.spaceBtwItems,),
-              SocialButtons()
+              const SizedBox(height: CustomSizes.spaceBtwItems,),
+              const SocialButtons()
             ],
           ),
         ),

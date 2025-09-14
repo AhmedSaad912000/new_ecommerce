@@ -12,18 +12,18 @@ class SignUpForm extends StatelessWidget {
                 Expanded(
                   child: TextFormField(
                     expands: false,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: CustomText.firstName,
                       prefixIcon: Icon(Iconsax.user),
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: CustomSizes.spaceBtwInputFields,
                 ),
                 Expanded(
                   child: TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       labelText: CustomText.lastName,
                       prefixIcon: Icon(Iconsax.user),
                     ),
@@ -31,43 +31,43 @@ class SignUpForm extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwInputFields,
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: CustomText.username,
                 prefixIcon: Icon(Iconsax.user_edit),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwInputFields,
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: CustomText.email,
                 prefixIcon: Icon(Iconsax.direct),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwInputFields,
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: CustomText.phoneNo,
                 prefixIcon: Icon(Iconsax.call),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwInputFields,
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   labelText: CustomText.password,
                   prefixIcon: Icon(Iconsax.password_check),
                   suffixIcon: Icon(Iconsax.eye_slash)),
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwSection,
             ),
 

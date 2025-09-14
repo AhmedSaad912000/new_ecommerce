@@ -21,32 +21,32 @@ class SignUpScreen extends StatelessWidget {
       appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(CustomSizes.defaultSpace),
+          padding: const EdgeInsets.all(CustomSizes.defaultSpace),
           child: Column(
             children: [
               Text(
                 CustomText.signupTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
-              SizedBox(
+              const SizedBox(
                 height: CustomSizes.spaceBtwSection,
               ),
-              SignUpForm(),
-              TermsAndConditionsCheckBox(),
-              SizedBox(height: CustomSizes.spaceBtwSection,),
+              const SignUpForm(),
+              const TermsAndConditionsCheckBox(),
+              const SizedBox(height: CustomSizes.spaceBtwSection,),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: ()=> Get.to(VerifyEmailScreen()),
-                  child: Text(
+                  onPressed: ()=> Get.to(const VerifyEmailScreen()),
+                  child: const Text(
                     CustomText.createAccount,
                   ),
                 ),
               ),
-              SizedBox(height: CustomSizes.spaceBtwSection,),
+              const SizedBox(height: CustomSizes.spaceBtwSection,),
               FormDivider(dividerText: CustomText.orSignUpWith.capitalize!,),
-              SizedBox(height: CustomSizes.spaceBtwSection,),
-              SocialButtons()
+              const SizedBox(height: CustomSizes.spaceBtwSection,),
+              const SocialButtons()
             ],
           ),
         ),

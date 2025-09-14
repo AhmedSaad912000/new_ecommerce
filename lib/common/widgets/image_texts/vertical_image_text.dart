@@ -31,7 +31,7 @@ class VerticalImageText extends StatelessWidget {
             Container(
               width: 56,
               height: 56,
-              padding: EdgeInsets.all(CustomSizes.sm),
+              padding: const EdgeInsets.all(CustomSizes.sm),
               decoration: BoxDecoration(
                 color: backgroundColor??(dark?ColorsManger.dark:ColorsManger.white),
                 borderRadius: BorderRadius.circular(100),
@@ -44,7 +44,7 @@ class VerticalImageText extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: CustomSizes.spaceBtwItems / 2,
             ),
             SizedBox(

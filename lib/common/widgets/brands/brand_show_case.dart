@@ -19,13 +19,13 @@ class BrandShowCase extends StatelessWidget {
       borderColor: ColorsManger.darkGray,
       backgroundColor: Colors.transparent,
       margin:
-      EdgeInsets.only(bottom: CustomSizes.spaceBtwItems),
+      const EdgeInsets.only(bottom: CustomSizes.spaceBtwItems),
       child: Column(
         children: [
-          BrandCard(
+          const BrandCard(
             showBorder: false,
           ),
-          SizedBox(height: CustomSizes.spaceBtwItems,),
+          const SizedBox(height: CustomSizes.spaceBtwItems,),
           Row(
             children: images
                 .map((img) => brandToProductImageWidget(img, context))
@@ -43,8 +43,8 @@ class BrandShowCase extends StatelessWidget {
         HelperFunctions.isDarkMode(context)
             ? ColorsManger.darkGray
             : ColorsManger.light,
-        margin: EdgeInsets.only(right: CustomSizes.sm),
-        padding: EdgeInsets.only(right: CustomSizes.md),
+        margin: const EdgeInsets.only(right: CustomSizes.sm),
+        padding: const EdgeInsets.only(right: CustomSizes.md),
         child: Image(
           image: AssetImage(image),
           fit: BoxFit.contain,

@@ -41,35 +41,35 @@ class StoreScreen extends StatelessWidget {
                       : ColorsManger.white,
                   expandedHeight: 440,
                   flexibleSpace: Padding(
-                    padding: EdgeInsets.all(CustomSizes.defaultSpace),
+                    padding: const EdgeInsets.all(CustomSizes.defaultSpace),
                     child: ListView(
-                      physics: NeverScrollableScrollPhysics(),
+                      physics: const NeverScrollableScrollPhysics(),
                       shrinkWrap: true,
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           height: CustomSizes.spaceBtwItems,
                         ),
-                        SearchContainer(
+                        const SearchContainer(
                           text: 'Search on Store',
                           showBorder: true,
                           showBackground: false,
                           padding: EdgeInsets.zero,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: CustomSizes.spaceBtwSection,
                         ),
                         SectionHeading(
                           title: "Features Brands",
                           onPressed: () {},
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: CustomSizes.spaceBtwItems / 1.5,
                         ),
                         GridLayout(
                           itemCount: 4,
                           mainAxisExtent: 80,
                           itemBuilder: (context, index) {
-                            return BrandCard(
+                            return const BrandCard(
                               showBorder: true,
                             );
                           },
@@ -77,7 +77,7 @@ class StoreScreen extends StatelessWidget {
                       ],
                     ),
                   ),
-                  bottom: CustomTabBar(tabs: [
+                  bottom: const CustomTabBar(tabs: [
                     Tab(
                       child: Text("Sports"),
                     ),
@@ -97,7 +97,7 @@ class StoreScreen extends StatelessWidget {
                 )
               ];
             },
-            body: TabBarView(
+            body: const TabBarView(
                 children: [
                   CategoriesTab(),
                   CategoriesTab(),

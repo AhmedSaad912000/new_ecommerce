@@ -24,7 +24,7 @@
              style: Theme.of(context).textTheme.headlineMedium,
              textAlign: TextAlign.center,
            ),
-           SizedBox(
+           const SizedBox(
              height: CustomSizes.spaceBtwItems,
            ),
            Text(
