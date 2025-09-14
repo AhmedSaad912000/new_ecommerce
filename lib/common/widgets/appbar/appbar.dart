@@ -1,5 +1,7 @@
+import 'package:ecommerce/util/constants/colors.dart';
 import 'package:ecommerce/util/constants/sizes.dart';
 import 'package:ecommerce/util/device/device_utility.dart';
+import 'package:ecommerce/util/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart' show Get;
 import 'package:get/get_navigation/get_navigation.dart';
@@ -22,13 +24,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark= HelperFunctions.isDarkMode(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: CustomSizes.md),
       child: AppBar(
         automaticallyImplyLeading: false,
         leading: showBackArrow
             ? IconButton(
-                onPressed: () => Get.back(), icon: const Icon(Iconsax.arrow_left))
+                onPressed: () => Get.back(), icon: const Icon(Iconsax.arrow_left),color: dark?ColorsManger.light:ColorsManger.dark,)
             : leadingIcon != null
                 ? IconButton(
                     onPressed: () => leadingOnPressed, icon: Icon(leadingIcon))
