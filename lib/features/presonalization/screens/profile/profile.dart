@@ -43,7 +43,7 @@ class ProfileScreen extends StatelessWidget {
               SizedBox(height: CustomSizes.spaceBtwItems/2,),
               Divider(),
               SizedBox(height: CustomSizes.spaceBtwItems,),
-              SectionHeading(title: "Profile InforMation",showActionButton: false,),
+              SectionHeading(title: "Profile Information",showActionButton: false,),
               ProfileMenu(onPressed: (){}, title: "Name", value: "Coding With I",),
               ProfileMenu(onPressed: (){}, title: "Username", value: "Coding With I",),
               SizedBox(height: CustomSizes.spaceBtwItems,),

@@ -1,10 +1,13 @@
 import 'package:ecommerce/common/widgets/images/rounded_image.dart';
 import 'package:ecommerce/common/widgets/texts/brand_title_text.dart';
+import 'package:ecommerce/features/shop/screens/product_details/product_details.dart';
 import 'package:ecommerce/util/constants/colors.dart';
 import 'package:ecommerce/util/constants/image_strings.dart';
 import 'package:ecommerce/util/constants/sizes.dart';
 import 'package:ecommerce/util/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../styles/shadows.dart';
@@ -20,7 +23,7 @@ class ProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = HelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(ProductDetailsScreen()),
       child: Container(
         width: 150,
         padding: const EdgeInsets.all(1),
@@ -36,11 +39,7 @@ class ProductCardVertical extends StatelessWidget {
               backgroundColor: dark ? ColorsManger.dark : ColorsManger.light,
               child: Stack(
                 children: [
-                  const RoundedImage(
-                    width: 158,
-                    imageUrl: CustomImages.productImage1,
-                    applyImageRadius: true,
-                  ),
+                  const RoundedImage(width: 158, imageUrl: CustomImages.productImage1, applyImageRadius: true,),
                   RoundedContainer(
                     radius: CustomSizes.sm,
                     backgroundColor:ColorsManger.secondary,
