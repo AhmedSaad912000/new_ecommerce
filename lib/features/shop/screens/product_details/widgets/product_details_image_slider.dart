@@ -9,7 +9,7 @@ class ProductImageSlider extends StatelessWidget {
         color: dark ? ColorsManger.darkGray : ColorsManger.light,
         child: Stack(
           children: [
-            SizedBox(
+            const SizedBox(
                 height: 400,
                 child: Padding(
                   padding: EdgeInsets.all(
@@ -27,7 +27,7 @@ class ProductImageSlider extends StatelessWidget {
                 height: 75,
                 child: ListView.separated(
                     shrinkWrap: true,
-                    physics: AlwaysScrollableScrollPhysics(),
+                    physics: const AlwaysScrollableScrollPhysics(),
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) => RoundedImage(
                       width: 75,
@@ -35,15 +35,15 @@ class ProductImageSlider extends StatelessWidget {
                       dark ? ColorsManger.dark : ColorsManger.white,
                       border:
                       Border.all(color: ColorsManger.primaryColor),
-                      padding: EdgeInsets.all(CustomSizes.sm),
+                      padding: const EdgeInsets.all(CustomSizes.sm),
                       imageUrl: CustomImages.productImage64,
                     ),
-                    separatorBuilder: (context, index) => SizedBox(width: CustomSizes.spaceBtwItems,),
+                    separatorBuilder: (context, index) => const SizedBox(width: CustomSizes.spaceBtwItems,),
                     itemCount: 4
                 ),
               ),
             ),
-            CustomAppBar(
+            const CustomAppBar(
               showBackArrow: true,
               actions: [
                 CircularIcon(icon: Iconsax.heart5,color: Colors.red,)

@@ -60,6 +60,7 @@ dependencies:
   logger: ^2.6.1
   carousel_slider: ^5.1.1
   readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
 
 
 

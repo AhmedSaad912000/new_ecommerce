@@ -4,7 +4,6 @@ import 'package:ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce/util/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/list_tiles/settings_menu_tile.dart';
@@ -27,7 +26,7 @@ class SettingsScreen extends StatelessWidget {
                 CustomAppBar(
                   title: Text("Account",style: Theme.of(context).textTheme.headlineMedium!.apply(color: ColorsManger.white),),
                 ),
-                UserProfileTile(onPressed: ()=> Get.to(ProfileScreen()),),
+                UserProfileTile(onPressed: ()=> Get.to(const ProfileScreen()),),
                 const SizedBox(height: CustomSizes.spaceBtwSection,)
               ],
             ),

@@ -12,13 +12,13 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         showBackArrow: true,
         title: Text("Profile"),
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(CustomSizes.defaultSpace),
+          padding: const EdgeInsets.all(CustomSizes.defaultSpace),
           child: Column(
             children: [
               Center(
@@ -36,29 +36,29 @@ class ProfileScreen extends StatelessWidget {
                       ),
 
                     ),
-                    TextButton(onPressed: (){},child: Text("Change Profile Picture"),)
+                    TextButton(onPressed: (){},child: const Text("Change Profile Picture"),)
                   ],
                 ),
               ),
-              SizedBox(height: CustomSizes.spaceBtwItems/2,),
-              Divider(),
-              SizedBox(height: CustomSizes.spaceBtwItems,),
-              SectionHeading(title: "Profile Information",showActionButton: false,),
+              const SizedBox(height: CustomSizes.spaceBtwItems/2,),
+              const Divider(),
+              const SizedBox(height: CustomSizes.spaceBtwItems,),
+              const SectionHeading(title: "Profile Information",showActionButton: false,),
               ProfileMenu(onPressed: (){}, title: "Name", value: "Coding With I",),
               ProfileMenu(onPressed: (){}, title: "Username", value: "Coding With I",),
-              SizedBox(height: CustomSizes.spaceBtwItems,),
-              Divider(),
-              SizedBox(height: CustomSizes.spaceBtwItems,),
-              SectionHeading(title: "Persenal Information",showActionButton: false,),
-              SizedBox(height: CustomSizes.spaceBtwItems,),
+              const SizedBox(height: CustomSizes.spaceBtwItems,),
+              const Divider(),
+              const SizedBox(height: CustomSizes.spaceBtwItems,),
+              const SectionHeading(title: "Persenal Information",showActionButton: false,),
+              const SizedBox(height: CustomSizes.spaceBtwItems,),
               ProfileMenu(onPressed: (){}, title: "User ID", icon: Iconsax.copy,value: "3456",),
               ProfileMenu(onPressed: (){}, title: "E-mail", value: "Coding With I",),
               ProfileMenu(onPressed: (){}, title: "Phone Number", value: "01014695632",),
               ProfileMenu(onPressed: (){}, title: "Gender", value: "Male",),
               ProfileMenu(onPressed: (){}, title: "Date of Birth", value: "18 Jan 2000",),
-              SizedBox(height: CustomSizes.spaceBtwItems,),
+              const SizedBox(height: CustomSizes.spaceBtwItems,),
               Center(
-                child: TextButton(onPressed: (){}, child: Text("Close Account",style: TextStyle(color: Colors.red),)),
+                child: TextButton(onPressed: (){}, child: const Text("Close Account",style: TextStyle(color: Colors.red),)),
               )
 
 

@@ -21,13 +21,13 @@ class CustomChoiceChip extends StatelessWidget {
       data: Theme.of(context).copyWith(canvasColor: Colors.transparent),
       child: ChoiceChip(
         onSelected: onSelected,
-        label: isColor ? SizedBox() :Text(text) ,
+        label: isColor ? const SizedBox() :Text(text) ,
         selected: selected,
         labelStyle: TextStyle(color: selected?Colors.white:null),
         avatar:isColor? CircularContainer(width: 50,height: 50,backgroundColor:HelperFunctions.getColor(text)!,):null,
-        shape: isColor?CircleBorder():null,
-        labelPadding:isColor?EdgeInsets.all(0):null,
-        padding:isColor?EdgeInsets.all(0):null,
+        shape: isColor?const CircleBorder():null,
+        labelPadding:isColor?const EdgeInsets.all(0):null,
+        padding:isColor?const EdgeInsets.all(0):null,
         backgroundColor: isColor?HelperFunctions.getColor(text)!:null,
 
       ),

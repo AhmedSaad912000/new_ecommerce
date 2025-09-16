@@ -9,17 +9,17 @@ class ProductAttributes extends StatelessWidget {
     return Column(
       children: [
         RoundedContainer(
-          padding: EdgeInsets.all(CustomSizes.md),
+          padding: const EdgeInsets.all(CustomSizes.md),
           backgroundColor: dark ? ColorsManger.darkGray : ColorsManger.grey,
           child: Column(
             children: [
               Row(
                 children: [
-                  SectionHeading(
+                  const SectionHeading(
                     title: "Varation",
                     showActionButton: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: CustomSizes.spaceBtwItems,
                   ),
                   Column(
@@ -27,11 +27,11 @@ class ProductAttributes extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          ProductTitleText(
+                          const ProductTitleText(
                             title: "Price",
                             smallSize: true,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: CustomSizes.spaceBtwItems / 1.4,
                           ),
                           Text(
@@ -41,21 +41,21 @@ class ProductAttributes extends StatelessWidget {
                                 .titleSmall!
                                 .apply(decoration: TextDecoration.lineThrough),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: CustomSizes.spaceBtwItems,
                           ),
-                          ProductPriceText(
+                          const ProductPriceText(
                             price: "20",
                           ),
                         ],
                       ),
                       Row(
                         children: [
-                          ProductTitleText(
+                          const ProductTitleText(
                             title: "Stock",
                             smallSize: true,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: CustomSizes.spaceBtwItems,
                           ),
                           Text(
@@ -68,7 +68,7 @@ class ProductAttributes extends StatelessWidget {
                   ),
                 ],
               ),
-              ProductTitleText(
+              const ProductTitleText(
                 title:
                     "This is Description of Product and it can go up to max 4 lines.",
                 smallSize: true,
@@ -77,14 +77,14 @@ class ProductAttributes extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: CustomSizes.spaceBtwItems,
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SectionHeading(title: "Colors", showActionButton: false,),
-            SizedBox(height: CustomSizes.spaceBtwItems / 2,),
+            const SectionHeading(title: "Colors", showActionButton: false,),
+            const SizedBox(height: CustomSizes.spaceBtwItems / 2,),
            Wrap(
              spacing: 8,
              children: [
@@ -99,8 +99,8 @@ class ProductAttributes extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SectionHeading(title: "Sizes", showActionButton: false,),
-            SizedBox(height: CustomSizes.spaceBtwItems / 2,),
+            const SectionHeading(title: "Sizes", showActionButton: false,),
+            const SizedBox(height: CustomSizes.spaceBtwItems / 2,),
            Wrap(
              spacing: 8,
              children: [

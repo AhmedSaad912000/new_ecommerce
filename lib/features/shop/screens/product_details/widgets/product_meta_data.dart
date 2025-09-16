@@ -24,7 +24,7 @@ class ProductMetaData extends StatelessWidget {
                     .apply(color: ColorsManger.black),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: CustomSizes.spaceBtwItems,
             ),
             Text(
@@ -34,27 +34,27 @@ class ProductMetaData extends StatelessWidget {
                   .titleSmall!
                   .apply(decoration: TextDecoration.lineThrough),
             ),
-            SizedBox(
+            const SizedBox(
               width: CustomSizes.spaceBtwItems,
             ),
-            ProductPriceText(
+            const ProductPriceText(
               price: "175",
               isLarge: true,
             ),
           ],
         ),
-        SizedBox(height: CustomSizes.spaceBtwItems/1.5,),
-        ProductTitleText(title: "Green Nike Sports Shirt",),
-        SizedBox(height: CustomSizes.spaceBtwItems/1.5,),
+        const SizedBox(height: CustomSizes.spaceBtwItems/1.5,),
+        const ProductTitleText(title: "Green Nike Sports Shirt",),
+        const SizedBox(height: CustomSizes.spaceBtwItems/1.5,),
         Row(
           children: [
-            ProductTitleText(title: "Status",),
-            SizedBox(width: CustomSizes.spaceBtwItems,),
+            const ProductTitleText(title: "Status",),
+            const SizedBox(width: CustomSizes.spaceBtwItems,),
             Text("In Stock",style: Theme.of(context).textTheme.titleMedium,),
           ],
         ),
 
-        SizedBox(height: CustomSizes.spaceBtwItems/1.5,),
+        const SizedBox(height: CustomSizes.spaceBtwItems/1.5,),
         Row(
           children: [
             CircularImage(image: CustomImages.shoeIcon,
@@ -62,8 +62,8 @@ class ProductMetaData extends StatelessWidget {
             height: 32,
               overlayColor: dark?ColorsManger.white:ColorsManger.black,
             ),
-            SizedBox(width: CustomSizes.spaceBtwItems/2,),
-            BrandTitleWithVerifiedIcon(title: "Nike",brandTextSize: TextSizes.medium,),
+            const SizedBox(width: CustomSizes.spaceBtwItems/2,),
+            const BrandTitleWithVerifiedIcon(title: "Nike",brandTextSize: TextSizes.medium,),
           ],
         ),
         
