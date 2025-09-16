@@ -20,7 +20,7 @@ class FormDivider extends StatelessWidget {
       children: [
         Flexible(
           child: Divider(
-            color: dark ? ColorsManger.darkGray : ColorsManger.gray,
+            color: dark ? ColorsManger.darkGray : ColorsManger.grey,
             thickness: 0.5,
             indent: 60,
             endIndent: 5,
@@ -29,7 +29,7 @@ class FormDivider extends StatelessWidget {
         Text(dividerText,style: Theme.of(context).textTheme.labelMedium,),
         Flexible(
           child: Divider(
-            color: dark ? ColorsManger.darkGray : ColorsManger.gray,
+            color: dark ? ColorsManger.darkGray : ColorsManger.grey,
             thickness: 0.5,
             indent: 5,
             endIndent: 60,

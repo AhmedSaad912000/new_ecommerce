@@ -41,7 +41,7 @@ class SearchContainer extends StatelessWidget {
                       : ColorsManger.light
                   : Colors.transparent,
               borderRadius: BorderRadius.circular(CustomSizes.cardRadiusLg),
-              border: showBorder ? Border.all(color: ColorsManger.gray) : null),
+              border: showBorder ? Border.all(color: ColorsManger.grey) : null),
           child: Row(
             children: [
               Icon(
@@ -54,7 +54,7 @@ class SearchContainer extends StatelessWidget {
               Text(
                 text,
                 style: Theme.of(context).textTheme.bodySmall?.apply(
-                  color: dark ? ColorsManger.white : ColorsManger.gray,
+                  color: dark ? ColorsManger.white : ColorsManger.grey,
                 ),
               )
             ],
