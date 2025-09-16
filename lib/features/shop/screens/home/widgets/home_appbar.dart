@@ -15,7 +15,7 @@ class HomeAppBar extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .labelMedium!
-                .apply(color: ColorsManger.gray),
+                .apply(color: ColorsManger.grey),
           ),
           Text(
             CustomText.homeAppbarSubTitle,

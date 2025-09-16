@@ -34,7 +34,7 @@ class PromoSlider extends StatelessWidget {
                   height: 4,
                   backgroundColor: controller.carousalCurrentIndex == i
                       ? ColorsManger.primaryColor
-                      : ColorsManger.gray,
+                      : ColorsManger.grey,
                 ),
             ],
           ),
